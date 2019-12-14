@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href=".\css\style.css">
+	<link rel="stylesheet" href=".\css\reset.css">
+</head>
+<body>
+	<main class="main">
+		<div class="container"> 
+			<img src="./img/maxresdefault.jpg" alt="Starkey" class="logoStark">
+
+			<div class="siginUp">
+				<h1 class="title">Game Of Throne</h1>
+
+				<form class="form">
+					<label for="email" class="label">
+						Enter your email
+					</label>
+					<input type="email" name="email" id="email" placeholder="aria@westeros.com" class="field">
+
+					<label for="password" class="label">
+						Choose secure password
+						<p class="hint">
+							Must be at least 8 characters
+						</p>
+						<input type="password" name="password" class="field" placeholder="Password">
+					</label>
+					
+					
+				  	<label for="consent" class="checkbox">
+						<input type="checkbox" id="consent" name="consent" value="confirmation">
+						<span class="checkbox__box"></span>
+				  		Remember me
+				  	</label>
+				
+					<button type="submit" class="btn">
+						Sign Up
+					</button>
+				</form>
+			</div>
+
+			<div class="registration">
+				<h1 class="title">Game Of Thrones</h1>
+
+				<form class="form">
+					<p class="blockMessage">
+						You have successfully joined the game.
+						Tell us more about yourself.
+					</p>
+					
+					<label for="nameUser" class="label">Who are you?
+
+						<p class="hint">
+							Alpha-numeric username
+						</p>
+						<input type="text" name="name" id="nameUser" class="field" placeholder="arya">
+					</label>
+					
+					<label for="houses" class="label label--house">Your Greate House</label>
+					<select name="houses" class="field" id="houses">
+						<option disabled>
+							Select House
+						</option>
+						<option>
+							Lannisters
+						</option>									
+							Baratheons
+						<option>
+							Tally
+						</option>
+						<option>
+							Arenas
+						</option>
+						<option>
+							Greyjoy
+						</option>
+						<option>
+							House Bronn
+						</option>
+						<option>
+							Starkey
+						</option>
+					</select>
+
+					<label for="personDesc" class="label label--desc">
+						Your preferences, hobbies, wishes, etc.
+					</label>
+					<textarea class="field--desc field" id="personDesc" placeholder="I have a long, TOKILL list"></textarea>
+
+					<button type="submit" class="btn">
+						Save
+					</button>
+				</form>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

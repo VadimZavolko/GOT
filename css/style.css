@@ -1,0 +1,178 @@
+
+.main {
+	background: url("../img/darknoise.png");
+	background-size: 100%;
+	color:  #d3bb89;
+}
+
+.logoStark {
+	width: 50%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+
+.btn {
+	background: #c19a49;
+	color: #fef8eb;
+	border: none;
+	width: 400px;
+	height: 45px;
+	font-size: 16px;
+	transition-duration: 0.4s;
+}
+
+.btn:hover {
+	background: #d29c2a;
+}
+
+.field{
+	display: block;
+	border-top: none;
+	border-left: none;
+	border-right:  none;
+	width: 400px;
+	height: 45px;
+	margin-top: 9px;
+	border-color: #d3bb89;
+	font-size: 16px;
+	color: #718093;
+	background:  url("../img/darknoise.png")  no-repeat right top;
+}
+
+.field:hover {
+	border-color: #d29c2a;
+}
+
+.label{
+	display: block;
+	font-size: 18px;
+}
+
+.siginUp {
+	margin:23vh 20vh; 
+}
+
+.field:focus{
+	 background-color: lightblue;
+}
+
+@font-face {
+    font-family: Game of Thrones;
+    src: url("../font/Game of Thrones.ttf");  
+}
+
+.info {
+	margin-top: 20px; 
+	margin-bottom: 70px;
+}
+
+.title {
+	font-family: Game of Thrones;
+	font-size: 30px;
+	margin-bottom: 60px;
+}
+
+#email, #nameUser{
+	margin-bottom: 20px;
+}
+
+.hint {
+	display: none;
+	color: white;
+	font-size: 12px;
+}
+
+.label:hover  .hint{
+	display: block;
+}
+
+.field--desc {
+	height: 56px;
+	margin-bottom: 60px;
+}
+
+.label--house {
+	margin-top:15px;
+}
+
+.label--desc {
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.blockMessage {
+	border-left: 2px solid #d3bb89; 
+	color: white;
+	font-size: 16px;
+	width: 273px;
+	margin-bottom: 25px;
+	padding-left: 17px; 
+}
+
+.registration .title {
+	font-size: 27px;
+	margin-left: 25px;
+}
+
+.registration {
+	margin:10vh 20vh;
+}
+
+#houses {
+	color: white;
+}
+
+select {
+  padding-right: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} 
+
+textarea {
+	resize: none
+}
+
+.checkbox {
+	display: block;
+	cursor: pointer;
+	margin-bottom: 25px;
+	margin-top: 18px;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+.checkbox__box {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: #d3bb89;
+	transition-duration: 0.2s;
+	position: relative;
+}
+
+.checkbox__box:before {
+	content: '\2714';
+	position: absolute;
+	color: black;
+	bottom: -3px;
+	transform: scale(0);
+	transition: 0.4s;
+}
+
+input[type="checkbox"]:checked + .checkbox__box:before{
+	transform: scale(1);
+}
+
+.registration {
+	display: none;
+}
