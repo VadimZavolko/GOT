@@ -10,74 +10,76 @@
 	<main class="main">
 		<div class="container"> 
 			<div class="logo">
-				<img src="img/maxresdefault.jpg" alt="Starkey" class="logoStark">
+				<img src="img/maxresdefault.jpg" alt="Starkey" class="logo__Stark">
 			</div>
 
-			<div class="siginUp">
-				<h1 class="title">Game Of Throne</h1>
-				<form class="form">
-					<label for="email" class="label">
-						Enter your email
-						<input type="email" name="email" id="email" placeholder="aria@westeros.com" class="field">
-					</label>
-
-					<label for="password" class="label">
-						Choose secure password
-						<p class="hint">
-							Must be at least 8 characters
-						</p>
-						<input type="password" name="password" class="field" placeholder="Password">
-					</label>
-					
-				  	<label for="consent" class="checkbox">
-						<input type="checkbox" id="consent" name="consent" value="confirmation">
-						<span class="checkbox__box"></span>
-				  		Remember me
-				  	</label>
-				
-					<button type="submit" class="btn">
-						Sign Up
-					</button>
-				</form>
-			</div>
-
-			<div class="registration">
+			<div class="wrp">
 				<h1 class="title">Game Of Thrones</h1>
-				<form class="form">
-					<p class="blockMessage">
-						You have successfully joined the game.
-						Tell us more about yourself.
-					</p>
+				<div class="siginUp">
 					
-					<label for="nameUser" class="label">Who are you?
-						<p class="hint">
-							Alpha-numeric username
+					<form class="siginUp__form">
+						<label for="email" class="siginUp__label">
+							Enter your email
+							<input type="email" name="email" id="email" placeholder="aria@westeros.com" class="siginUp__field">
+						</label>
+
+						<label for="password" class="siginUp__label">
+							Choose secure password
+							<p class="siginUp__label-hint">
+								Must be at least 8 characters
+							</p>
+							<input type="password" name="password" class="siginUp__field" placeholder="Password">
+						</label>
+						
+						<label for="consent" class="siginUp__checkbox">
+							<input type="checkbox" id="consent" name="consent" value="confirmation">
+							<span class="siginUp__checkbox-box"></span>
+							Remember me
+						</label>
+					
+						<button type="submit" class="siginUp__btn">
+							Sign Up
+						</button>
+					</form>
+				</div>
+
+				<div class="registration">
+					<form class="registration__form">
+						<p class="registration__blockMessage">
+							You have successfully joined the game.
+							Tell us more about yourself.
 						</p>
-						<input type="text" name="name" id="nameUser" class="field" placeholder="arya">
-					</label>
-					
-					<label for="houses" class="label label--house">Your Greate House
-						<select name="houses" class="field" id="houses">
-							<option disabled>Select House</option>
-							<option>Lannisters</option>
-							<option>Baratheons</option>
-							<option>Tally</option>
-							<option>Arenas</option>
-							<option>Greyjoy</option>
-							<option>House Bronn</option>
-							<option>Starkey</option>
-						</select>
-					</label>
+						
+						<label for="nameUser" class="registration__label">Who are you?
+							<p class="registration__label-hint">
+								Alpha-numeric username
+							</p>
+							<input type="text" name="name" id="nameUser" class="registration__field" placeholder="arya">
+						</label>
+						
+						<label for="houses" class="registration__label registration__label--house">Your Greate House
+							<select name="houses" class="registration__field " id="houses">
+								<option disabled>Select House</option>
+								<option>Lannisters</option>
+								<option>Baratheons</option>
+								<option>Tally</option>
+								<option>Arenas</option>
+								<option>Greyjoy</option>
+								<option>House Bronn</option>
+								<option>Starkey</option>
+							</select>
+						</label>
 
-					<label for="personDesc" class="label label--desc">
-						Your preferences, hobbies, wishes, etc.
-						<textarea class="field--desc field" id="personDesc" placeholder="I have a long, TOKILL list"></textarea>
-					</label>
+						<label for="personDesc" class="registration__label registration__label--desc">
+							Your preferences, hobbies, wishes, etc.
+							<textarea class="registration__field--desc registration__field" id="personDesc" placeholder="I have a long, TOKILL list"></textarea>
+						</label>
 
-					<button type="submit" class="btn">
-						Save
-					</button>
-				</form>
+						<button type="submit" class="registration__btn">
+							Save
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</main>

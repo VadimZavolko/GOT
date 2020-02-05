@@ -16,7 +16,7 @@
 	height: 100vh;
 }
 
-.logoStark {
+.logo__Stark {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -28,7 +28,7 @@
 	height: 100%;
 }
 
-.btn {
+.siginUp__btn, .registration__btn {
 	background: #c19a49;
 	color: #fef8eb;
 	border: none;
@@ -38,11 +38,11 @@
 	transition-duration: 0.4s;
 }
 
-.btn:hover {
+.siginUp__btn:hover, .registration__btn:hover {
 	background: #d29c2a;
 }
 
-.field{
+.siginUp__field, .registration__field {
 	display: block;
 	border-top: none;
 	border-left: none;
@@ -56,21 +56,13 @@
 	background:  url("../img/darknoise.png")  no-repeat right top;
 }
 
-.field:hover {
+.siginUp__field:hover, .registration__field:hover {
 	border-color: #d29c2a;
 }
 
-.label{
+.registration__label, .siginUp__label{
 	display: block;
 	font-size: 1.2rem;
-}
-
-.siginUp {
-	margin: auto; 
-}
-
-.field:focus{
-	 background-color: lightblue;
 }
 
 @font-face {
@@ -78,14 +70,10 @@
     src: url("../font/Game of Thrones.ttf");  
 }
 
-.info {
-	margin-top: 1.2rem; 
-	margin-bottom: 4rem;
-}
-
 .title {
 	font-family: Game of Thrones, sans-serif;
 	font-size: 2rem;
+	text-align: center;
 	margin-bottom: 2.5rem;
 }
 
@@ -93,31 +81,32 @@
 	margin-bottom: 1.2rem;
 }
 
-.hint {
+.registration__label-hint, .siginUp__label-hint {
 	display: none;
 	color: white;
 	font-size: 0.8rem;
 }
 
-.label:hover  .hint{
+.registration__label:hover  .registration__label-hint, .siginUp__label:hover  .siginUp__label-hint{
 	display: block;
 }
 
-.field--desc {
+.registration__field--desc {
 	height: 56px;
 	margin-bottom: 3rem;
+	resize: none;
 }
 
-.label--house {
+.registration__label--house {
 	margin-top: 1rem;
 }
 
-.label--desc {
+.registration__label--desc {
 	margin-top: 1.5rem;
 	margin-bottom: 1rem;
 }
 
-.blockMessage {
+.registration__blockMessage {
 	border-left: 2px solid #d3bb89; 
 	color: white;
 	font-size: 1rem;
@@ -126,31 +115,29 @@
 	padding-left: 1rem; 
 }
 
-.registration .title {
-	font-size: 1.5rem;
-	margin-left: 1.5rem;
-}
-
-.registration {
-	margin: auto;
+.wrp {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #houses {
+	padding-right: 1.5rem;
+  	-webkit-appearance: none;
+ 	-moz-appearance: none;
+  	appearance: none;
 	color: white;
-}
-
-select {
-  padding-right: 1.5rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+	
 } 
 
-textarea {
-	resize: none
+#houses option {
+	background: #2d3436;
 }
 
-.checkbox {
+.siginUp__checkbox {
 	display: block;
 	cursor: pointer;
 	margin-bottom: 1.5rem;
@@ -161,16 +148,17 @@ input[type="checkbox"] {
 	display: none;
 }
 
-.checkbox__box {
+.siginUp__checkbox-box {
 	display: inline-block;
 	width: 14px;
 	height: 14px;
 	background: #d3bb89;
+	border-radius: 15%;
 	transition-duration: 0.2s;
 	position: relative;
 }
 
-.checkbox__box:before {
+.siginUp__checkbox-box:before {
 	content: '\2714';
 	position: absolute;
 	color: black;
@@ -179,7 +167,7 @@ input[type="checkbox"] {
 	transition: 0.4s;
 }
 
-input[type="checkbox"]:checked + .checkbox__box:before{
+input[type="checkbox"]:checked + .siginUp__checkbox-box:before{
 	transform: scale(1);
 }
 
@@ -191,9 +179,9 @@ button:focus {
 }
 
 .registration {
-	display: none;
+	
 }
 
 .siginUp {
-	
-}
+	display: none;
+}	
