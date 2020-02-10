@@ -1,6 +1,7 @@
 .body {
 	font-size: 16px;
 	height: 100%;
+	overflow: hidden;
 }
 
 .main {
@@ -49,11 +50,12 @@
 	border-right:  none;
 	width: 400px;
 	height: 45px;
-	margin-top: 0.6rem;
+	margin-top: 0.1rem;
 	border-color: #d3bb89;
 	font-size: 1rem;
 	color: #718093;
 	background:  url("../img/darknoise.png")  no-repeat right top;
+	background-color: transparent;
 }
 
 .siginUp__field:hover, .registration__field:hover {
@@ -74,7 +76,10 @@
 	font-family: Game of Thrones, sans-serif;
 	font-size: 2rem;
 	text-align: center;
+	bottom: 0;
 	margin-bottom: 2.5rem;
+	position: relative;
+	transition: 0.6s linear;
 }
 
 #email, #nameUser{
@@ -82,19 +87,17 @@
 }
 
 .registration__label-hint, .siginUp__label-hint {
-	display: none;
+	opacity: 0;
 	color: white;
 	font-size: 0.8rem;
-}
-
-.registration__label:hover  .registration__label-hint, .siginUp__label:hover  .siginUp__label-hint{
-	display: block;
+	transition: 0.3s all;
 }
 
 .registration__field--desc {
-	height: 56px;
+	height: 3rem;
 	margin-bottom: 3rem;
 	resize: none;
+	transition: 0.3s ease-out;
 }
 
 .registration__label--house {
@@ -106,6 +109,11 @@
 	margin-bottom: 1rem;
 }
 
+.registration__field--desc:focus {
+	font-size: 1.2rem;
+	height: 7rem;
+}
+
 .registration__blockMessage {
 	border-left: 2px solid #d3bb89; 
 	color: white;
@@ -113,6 +121,7 @@
 	width: 273px;
 	margin-bottom: 1.5rem;
 	padding-left: 1rem; 
+	transition: all 0.4s;
 }
 
 .wrp {
@@ -179,9 +188,20 @@ button:focus {
 }
 
 .registration {
-	
+	display: none;
 }
 
 .siginUp {
-	display: none;
-}	
+	
+}
+
+.siginUp__field:-webkit-autofill,
+.siginUp__field:-webkit-autofill:hover,
+.siginUp__field:-webkit-autofill:focus,
+.siginUp__field:-webkit-autofill:active,
+.registration__field:-webkit-autofill,
+.registration__field:-webkit-autofill:hover,
+.registration__field:-webkit-autofill:focus,
+.registration__field:-webkit-autofill:active {
+    -webkit-transition-delay: 99999s;
+}
