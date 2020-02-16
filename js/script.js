@@ -1,6 +1,6 @@
 const FIELD1 = document.querySelectorAll('.siginUp__field');
 const regPassword = /^\w{8,}$/
-const regEmail = /^[a-zA-z\.]+@[a-zA-z]+\.[a-zA-z]+$/
+const regEmail = /^[a-zA-z0-9\.]+@[a-zA-z]+\.[a-zA-z]+$/
 
 FIELD1[1].onblur = function() {
     const HINT = document.querySelector('.siginUp__label-hint')
@@ -65,7 +65,7 @@ FIELD2[1].onblur = function() {
     }
 }
 
-const regText = /^[a-zA-zа-яА-Я0-9()]+$/
+const regText = /^[a-zA-zа-яА-Я0-9().,\s]{25,}$/
 FIELD2[2].onblur = function() {
     if(!regText.test(FIELD2[2].value)){
         FIELD2[2].style.borderColor = 'red';
