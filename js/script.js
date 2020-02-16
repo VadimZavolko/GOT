@@ -1,6 +1,6 @@
 const FIELD1 = document.querySelectorAll('.siginUp__field');
 const regPassword = /^\w{8,}$/
-const regEmail = /^[a-zA-z0-9\.]+@[a-zA-z]+\.[a-zA-z]+$/
+const regEmail = /^[a-zA-z0-9]((.[a-zA-z0-9]{1,})?)+@[a-zA-z]+\.[a-zA-z]+$/
 
 FIELD1[1].onblur = function() {
     const HINT = document.querySelector('.siginUp__label-hint')
