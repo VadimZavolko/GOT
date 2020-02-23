@@ -154,7 +154,8 @@
 }
 
 input[type="checkbox"] {
-	display: none;
+	position: absolute;
+	opacity: 0;
 }
 
 .siginUp__checkbox-box {
@@ -189,10 +190,6 @@ button:focus {
 
 .registration {
 	display: none;
-}
-
-.siginUp {
-	
 }
 
 .siginUp__field:-webkit-autofill,
