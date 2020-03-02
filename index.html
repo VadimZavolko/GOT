@@ -5,12 +5,22 @@
 	<title>Form</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/nice-select.css">
 </head>
 <body>
 	<main class="main">
 		<div class="container"> 
-			<div class="logo">
-				<img src="img/maxresdefault.jpg" alt="Starkey" class="logo__Stark">
+			<div class="slick-slider">
+				<div class="slick-list"><img src="img/arryn__as_high_as_honor.png" alt="Starkey" class="slick-track"></div>
+				<div class="slick-list"><img src="img/baratheon__ours_is_the_fury.png" alt="Starkey" class="slick-track"></div>
+				<div class="slick-list"><img src="img/blood_and_fire_targaryen.png" alt="Starkey" class="slick-track"></div>
+				<div class="slick-list"><img src="img/lannister.png" alt="Starkey" class="slick-track"></div>
+				<div class="slick-list"><img src="img/martell.png" alt="Starkey" class="slick-track"></div>
+				<div class="slick-list"><img src="img/tyrell__growing_strong.png" alt="Starkey" class="slick-track"></div>
+				<div class="slick-list"><img src="img/winter_is_coming.png" alt="Starkey" class="slick-track"></div>
+				<div class="slick-list"><img src="img/we_do_not_sow__greyjoy.png" alt="Starkey" class="slick-track"></div>
 			</div>
 
 			<div class="wrp">
@@ -58,15 +68,16 @@
 						</label>
 						
 						<label class="registration__label registration__label--house">Your Greate House
-							<select name="houses" class="registration__field " id="houses">
-								<option>Select House</option>
-								<option>Lannisters</option>
-								<option>Baratheons</option>
-								<option>Tally</option>
-								<option>Arenas</option>
-								<option>Greyjoy</option>
-								<option>House Bronn</option>
-								<option>Starkey</option>
+							<select name="houses" class="nice-select registration__field " id="houses">
+								<option class="option">Select House</option>
+								<option class="option">Lannisters</option>
+								<option class="option">Baratheons</option>
+								<option class="option">Tyrell</option>
+								<option class="option">Arryn</option>
+								<option class="option">Greyjoy</option>
+								<option class="option">Starkey</option>
+								<option class="option">Martell</option>
+								<option class="option">Targaryen</option>
 							</select>
 						</label>
 
@@ -84,6 +95,9 @@
 		</div>
 	</main>
 
+	<script rel="script" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

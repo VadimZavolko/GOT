@@ -129,3 +129,47 @@ reg.addEventListener('submit', (e) => {
         FIELD1[1].style.borderColor = '#d3bb89'; 
     }
 })
+
+
+$(document).ready(function(){
+    $('.slick-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        infinite: true
+    });
+
+    $('select').niceSelect('wide');
+    $('select').change(function(){
+        const value = $(this).val();
+        switch(value){
+            case 'Baratheons':  $('.slick-slider').slick('slickGoTo', 1);
+                $('.slick-slider').slick('slickPause');
+                break;
+            case 'Lannisters':  $('.slick-slider').slick('slickGoTo', 3);
+                $('.slick-slider').slick('slickPause');
+                break;
+            case 'Tyrell':  $('.slick-slider').slick('slickGoTo', 5);
+                $('.slick-slider').slick('slickPause');
+                break;
+            case 'Arryn':  $('.slick-slider').slick('slickGoTo', 0);
+                $('.slick-slider').slick('slickPause');
+                break;
+            case 'Greyjoy':  $('.slick-slider').slick('slickGoTo', 7);
+                $('.slick-slider').slick('slickPause');
+                break;
+            case 'Starkey':  $('.slick-slider').slick('slickGoTo', 6);
+                $('.slick-slider').slick('slickPause');
+                break;
+            case 'Martell':  $('.slick-slider').slick('slickGoTo', 4);
+                $('.slick-slider').slick('slickPause');
+                break;
+            case 'Targaryen':  $('.slick-slider').slick('slickGoTo', 2);
+                $('.slick-slider').slick('slickPause');
+                break;  
+            default:  $('.slick-slider').slick('slickPlay');                                                            
+        }
+    }); 
+});
